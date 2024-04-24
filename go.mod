@@ -1,3 +1,3 @@
-module github.com/YerzhanAkhmetov/cahe
+github.com/YerzhanAkhmetov/cache
 
 go 1.22.2
