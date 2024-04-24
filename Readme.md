@@ -6,23 +6,25 @@
 package main
 
 import (
-"fmt"
-"github.com/Nurik2k/cache"
+	"fmt"
+
+	"github.com/YerzhanAkhmetov/cache"
 )
 
 func main() {
-
-	cache := cache.NewCache()
+	cache := cache.New()
 
 	cache.Set("userId", 42)
-	userId, _ := cache.Get("userId")
+
+	userId := cache.Get("userId")
 
 	fmt.Println(userId)
 
-	cache.Delete("userId")
-	userId, _ = cache.Get("userId")
-
+	//cache.Delete("userId")
+	cache.Set("Yerzahn", 35)
+	userId = cache.Get("userId")
+	cache.Show()
 	fmt.Println(userId)
-
 }
+
 ```
